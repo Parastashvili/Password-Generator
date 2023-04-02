@@ -1,0 +1,345 @@
+html {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background: #08070B;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+main {
+    margin-top: 64px;
+}
+
+#name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #817D92;
+}
+
+#password_print {
+    background: #24232C;
+    width: 343px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px auto auto auto;
+}
+
+#main_password {
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #E6E5EA;
+    cursor: pointer;
+    opacity: 0.25;
+}
+
+#copy_icon {
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+#content {
+    background-color: #24232C;
+    width: 343px;
+    height: 423px;
+    margin: auto;
+    padding-bottom: 16px;
+}
+
+#ch_length {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 16px 0 0;
+}
+
+.texts {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E6E5EA;
+    margin-left: 25px;
+}
+
+#char_t {
+    margin-top: 21px;
+}
+
+#char_n {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #A4FFAF;
+
+}
+
+#copied_div {
+    display: flex;
+    align-items: center;
+    margin-left: -50px;
+}
+
+#copied {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #A4FFAF;
+    margin-right: 10px;
+    display: none;
+}
+
+.slider {
+    appearance: none;
+    width: 311px;
+    height: 8px;
+    border-radius: 1px;
+    background: #18171F;
+    outline: none;
+    opacity: 0.7;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 17px;
+    background: linear-gradient(to right, #A4FFAF 0%, #A4FFAF 50%, #fff 50%, #fff 100%);
+    outline: none;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #A4FFAF;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.includes {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0 16px;
+}
+
+.check {
+    background: #A4FFAF;
+    margin-right: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#topcheck {
+    margin-top: 32px;
+}
+
+.unchecked {
+    width: 20px;
+    height: 20px;
+    margin-right: 24px;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #E6E5EA;
+}
+
+#strong {
+    width: 311px;
+    height: 56px;
+    background: #18171F;
+    margin: 32px 16px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#strength {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #817D92;
+    margin-left: 16px;
+}
+
+.weak {
+    width: 4px;
+    height: 22px;
+    border: 2px solid #E6E5EA;
+}
+
+#weakness {
+    display: flex;
+    flex-direction: row;
+}
+
+#one {
+    margin-right: 6px;
+}
+
+#two {
+    margin-right: 6px;
+}
+
+#three {
+    margin-right: 6px;
+}
+
+#four {
+    margin-right: 16px;
+}
+
+#texturi {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    color: #E6E5EA;
+    margin-right: -50px;
+}
+
+#gen_but {
+    background: #A4FFAF;
+    width: 311px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #24232C;
+    cursor: pointer;
+}
+
+#buton {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.cb {
+    visibility: hidden;
+}
+
+input.cb::after {
+    visibility: visible;
+    border: 2px solid #E6E5EA;
+    content: url(./assets/images/icon-check.svg);
+    color: red;
+    background: transparent;
+    padding: 2px;
+}
+
+input.cb:checked::after {
+    content: url(./assets/images/icon-check.svg);
+    color: green;
+    background: #A4FFAF;
+    border: 0px solid #E6E5EA;
+    padding: 4px;
+}
+
+#chk {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+
+@media (min-width:768px) {
+    main {
+        margin-top: 133px;
+    }
+
+    #name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #817D92;
+    }
+
+    #password_print {
+        width: 540px;
+        height: 80px;
+    }
+
+    #main_password {
+        margin-left: 32px;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    #content {
+        width: 540px;
+        height: 528px;
+    }
+
+    #ch_length {
+        margin: 24px 32px 0 0;
+    }
+
+    .texts {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 32px;
+    }
+
+    .slider {
+        width: 476px;
+        height: 8px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 27px;
+
+    }
+
+    .includes {
+        margin: 19px 0 0 32px;
+    }
+
+    #strong {
+        width: 476px;
+        height: 72px;
+        margin: 32px 32px 0 32px;
+    }
+
+    #gen_but {
+        width: 476px;
+        height: 65px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 32px;
+    }
+
+    #texturi {
+        margin-right: -220px;
+    }
+
+}
+
+@media (min-width:1440px) {
+
+    #gen_but:hover {
+        border: 2px solid #A4FFAF;
+        background: #24232C;
+        color: #A4FFAF;
+    }
+
+    #gen_but:hover #my-svg path {
+        fill: #A4FFAF;
+      }
+}
